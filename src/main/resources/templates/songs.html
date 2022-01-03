@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>Songs</title>
+</head>
+
+<body>
+	<h1>The best songs in the world</h1>
+	<ul>
+		<li th:each="song : ${songs}" th:text="${song}"></li>
+	</ul>
+
+</body>
+
+<footer>
+	<a th:href="@{http://localhost:8080/}">Main</a>
+</footer>
+
+</html>
